@@ -118,6 +118,42 @@ print(fact)              #24
 
 
 
+
+#Factors of a Number
+n = int(input())            #6
+for i in range(1,n+1):
+    if(n%i == 0):
+        print(i)
+
+
+'''
+1
+2
+3
+6
+'''
+
+#Factors of a Number - 2
+num = int(input())            #15
+new_num=""
+for i in range(1,num+1):
+    if(num%i==0):
+        new_num += str(i)+" "
+print(new_num)                # 1 3 5 15
+
+
+
+
+#Sum of All Factors
+num =int(input())            #12
+sum_num =0
+for i in range(1,num+1):
+    if(num%i == 0):
+        sum_num += i
+print(sum_num)                #28
+
+
+
 #Print Vowels
 string = input()
 vowels = "aeiou"
@@ -192,8 +228,25 @@ for i in range(1,11):
 
 
 
+#Greatest Among N Numbers
+n = int(input())
+s = []
+greatest_num=0
+for i in range(n):
+    m = int(input())
+    s.append(m)
+print(max(s))  
 
+'''
+input : 5
+8
+11
+96
+49
+25
 
+output: 96
+'''
 
 
 
