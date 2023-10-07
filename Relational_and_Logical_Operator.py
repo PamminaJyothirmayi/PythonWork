@@ -241,8 +241,49 @@ else:
     print("Sunday")
 
 
-#Simple Calculator
 
+#Name of Month
+#Given the number of the month, write a program to print the name of the month.
+
+month = int(input())
+if(month==1):
+    print("January")
+elif(month==2):
+    print("February")
+elif(month==3):
+    print("March")
+elif(month==4):
+    print("April")
+elif(month==5):
+    print("May")
+elif(month==6):
+    print("June")
+elif(month==7):
+    print("July")
+elif(month==8):
+    print("August")
+elif(month==9):
+    print("September")
+elif(month==10):
+    print("October")
+elif(month==11):
+    print("November")
+elif(month==12):
+    print("December")
+else:
+    print("Invalid Month Number")
+
+'''
+input : 4
+output : April 
+
+
+input : 13
+output : Invalid Month Number
+'''
+
+
+#Simple Calculator
 c = input()
 f = int(input())
 s = int(input())
@@ -284,6 +325,14 @@ print("50:"+str(b))
 print("10:"+str(c))
 print("1:"+str(d))
 
+
+'''
+input :    893
+output :   100:8
+           50:1
+           10:4
+           1:3
+'''
 #---------------------------------------------
 
 m = int(input())
@@ -302,3 +351,193 @@ print("10:",is_divisible_by_10 , end=" ")
 z = y%10 
 reminder_value = z 
 print("1:",reminder_value)
+
+'''
+input : 1543
+output : 500: 3 50: 0 10: 4 1: 3
+'''
+
+#-----------------------------------------
+
+n = int(input()) #370
+
+hundred_notes = n//100 #3
+print("100 Notes:",hundred_notes)
+
+x = n%100  #70
+
+fifty_notes = x//50 #1
+print("50 Notes:",fifty_notes)
+
+y = x%50 #20
+
+twenty_notes = y//20 #1
+print("20 Notes:",twenty_notes)
+
+z = y%20 #0 
+
+ten_notes = z//10 #0 
+print("10 Notes:",ten_notes)
+
+'''
+input : 370
+output : 100 Notes: 3
+         50 Notes: 1
+         20 Notes: 1
+         10 Notes: 0
+'''
+
+#---------------------------
+
+
+amount = int(input())
+
+a_1000 = amount//1000
+
+x = amount%1000 
+a_500 = x//500 
+
+y = x%500 
+a_100 = y//100 
+
+z = y%100 
+a_50 = z//50
+
+p = z%50 
+a_20 = p//20 
+
+q = p%20 
+a_5 = q//5 
+
+r = q%5 
+a_1 = r  
+
+print("1000:" + str(a_1000))
+print("500:" + str(a_500))
+print("100:" + str(a_100))
+print("50:" + str(a_50))
+print("20:" + str(a_20))
+print("5:" + str(a_5))
+print("1:"+ str(a_1))
+
+'''
+input: 8593
+
+output:=
+1000:8
+500:1
+100:0
+50:1
+20:2
+5:0
+1:3
+'''
+
+
+
+
+
+
+
+
+
+
+# Day Name-2 Hard level
+# Given the weekday of the first day of the month, determine the day of the week of the week of the given date in that month.
+
+day  = input()
+number = int(input())
+name_of_day = 0
+
+if day == "Monday":
+    name_of_day = 1 
+elif day == "Tuesday":
+    name_of_day = 2
+elif day == "Wednesday":
+    name_of_day = 3
+elif day == "Thursday":
+    name_of_day = 4
+elif day == "Friday":
+    name_of_day = 5
+elif day == "Saturday":
+    name_of_day = 6
+else:
+    name_of_day = 0
+ 
+number_of_day= name_of_day        
+odd_days = number_of_day+(number-1)
+reminder = odd_days%7 # it will be 4
+
+if reminder==1:
+    print("Monday")
+elif reminder==2:
+    print("Tuesday")
+elif reminder==3:
+    print("Wednesday")
+elif reminder==4:
+    print("Thursday")
+elif reminder==5:
+    print("Friday")
+elif reminder==6:
+    print("Saturday")
+elif reminder==0:
+    print("Sunday")
+
+
+'''
+input:  Monday
+        16
+
+output : Tuesday
+'''
+
+
+
+
+
+
+#Days Conversion
+
+n = int(input())
+y = int(n/365)
+w = int((n%365)/7)
+d = (n - ((y*365)+(w*7)))
+print(str(y) +" years " + str(w) +" weeks "+ str(d) +" days")
+
+'''
+input : 1329
+output : 3 years 33 weeks 3 days
+
+
+input : 960
+output : 2 years 32 weeks 6 days
+'''
+
+
+
+#Traingles
+
+a = int(input())
+b = int(input())
+c = int(input())
+
+if(a==b==c):
+    print("Equilateral")
+elif(a==b or a==c or b==c):
+    print("Isosceles")
+else:
+    print("Scalene")
+
+'''
+input : 4
+        4
+        4
+output : Equilateral
+
+
+input : 4
+        4
+        3
+output : Isosceles
+'''
+
