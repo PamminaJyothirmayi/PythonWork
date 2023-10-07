@@ -61,6 +61,21 @@ Jyothi
 6
 """
 
+#Basic Arithmetic
+A = int(input())        #8
+B = int(input())        #2
+add = A + B
+sub = A - B
+mul = A * B
+div = A / B
+mod = A % B 
+power = A ** B
+print(add)    #10
+print(sub)    #6
+print(mul)    #16
+print(div)    #4
+print(mod)    #0
+print(power)    #64
 
 
 #String Indexing
@@ -137,11 +152,13 @@ print(n[::-1])
 a = input()
 print(len(a)-1)
 
-
 """
 Python
 5
 """
+
+
+
 
 #Half String
 a = input()
@@ -155,6 +172,20 @@ output : Ama
 
 input : Bottle
 output : Bot
+'''
+
+#Half String -2
+string = input()
+even_number = len(string)//2
+second_half = string[even_number:]
+print(second_half)
+
+'''
+input : Football
+output : ball
+
+input : time
+output : me
 '''
 
 #Half Length of String
@@ -216,7 +247,31 @@ print(sums)                      #11
 
 
 
+#Replace a Letter
+word = input()
+index_num = int(input())
+letter = input()
 
+s1 = word[:index_num]
+s2 = word[index_num+1:]
+print(s1 +letter + s2)
+
+'''
+input : Prime
+        3
+        z
+
+output: Prize
+
+
+input2 : butter
+    1
+    i
+
+output: bitter
+'''
+
+      
 
 
 #Skip the Fourth Character
