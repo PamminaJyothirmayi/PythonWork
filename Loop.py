@@ -46,3 +46,48 @@ output : 1 8 27 64
 
 
 
+#Print the Character
+word = input()     #Morning
+for i in word:
+    print(i)
+
+'''
+M
+o
+r
+n
+i
+n
+g
+'''
+
+
+word = "Python"  
+for each_char in word:  
+    print(each_char)
+'''
+P  
+y  
+t  
+h  
+o  
+n
+'''
+
+#Range
+for number in range(3):  
+    print(number)
+'''
+0
+1
+2
+'''
+
+
+for number in range(5, 8):  
+    print(number)
+'''
+5
+6
+7
+'''
