@@ -91,3 +91,114 @@ for number in range(5, 8):
 6
 7
 '''
+
+
+
+
+#Styled Word
+Word = input()        #Python
+empty_str =""
+for i in range(1,len(Word)):
+    empty_str = empty_str + "-"+Word[i]
+print(Word[0]+empty_str)    
+
+'''
+output : P-y-t-h-o-n
+'''
+
+
+
+#Factorial
+num = int(input())        #4
+fact = 1
+while n!=0:
+    fact=fact*num 
+    num = num-1
+print(fact)              #24
+
+
+
+#Print Vowels
+string = input()
+vowels = "aeiou"
+for i in string:
+    if(i in vowels):
+        print(i)
+        
+'''
+input : indian
+output : 
+i
+i
+a
+'''
+
+#Vowels in a String
+string = input()
+vowels = "aeiou"
+new_str=""
+for ch in string:
+    if(ch in vowels):
+        new_str += ch
+print(new_str)
+
+'''
+input : container
+output : oaie
+'''
+
+#Reverse the String
+word = input()
+new_str =""
+for ch in word:
+    new_str  = ch+ new_str 
+print(new_str) 
+
+'''
+input : Hurray! We have won the match.
+output : .hctam eht now evah eW !yarruH
+'''
+
+#Count of Vowels
+string = input()        #developer
+vowels = "aeiou"
+c=0
+for i in string:
+    if(i in  vowels):
+        c=c+1
+print(c)                #4
+
+
+
+
+#Multiplication Table
+num = int(input())        #3
+for i in range(1,11):
+    print(num , "x" ,i ,"=",num*i)
+    
+'''
+3 x 1 = 3
+3 x 2 = 6
+3 x 3 = 9
+3 x 4 = 12
+3 x 5 = 15
+3 x 6 = 18
+3 x 7 = 21
+3 x 8 = 24
+3 x 9 = 27
+3 x 10 = 30
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
