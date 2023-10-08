@@ -124,8 +124,6 @@ n = int(input())            #6
 for i in range(1,n+1):
     if(n%i == 0):
         print(i)
-
-
 '''
 1
 2
@@ -205,8 +203,26 @@ for i in string:
 print(c)                #4
 
 
+#Vowels of String-2
+string = input()
+vowels = "aeiou"
+str=""
+for i in string:
+    if i in vowels:
+        str = str + i 
+        
+if len(str) > 2:
+    print("String has more than two vowels")
+else:
+    print("String doesn't have more than two vowels")
 
+'''
+input : Indian
+output : String has more than two vowels
 
+input : code
+output : String doesn't have more than two vowels
+'''
 #Multiplication Table
 num = int(input())        #3
 for i in range(1,11):
@@ -248,10 +264,24 @@ input : 5
 output: 96
 '''
 
+#Smallest Among N Numbers
+n = int(input())
+smallest = 100
+for i in range(n):
+    num = int(input())
+    if num<smallest:
+        smallest=num 
+print(smallest)      
+'''
+input : 5
+8
+11
+96
+49
+25
 
-
-
-
+output: 8
+'''
 
 
 
