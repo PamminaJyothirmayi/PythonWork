@@ -10,6 +10,17 @@ else:
 
 
 
+#Eligible Criteria
+maths = int(input())
+physics = int(input())
+chemistry = int(input())
+
+total_marks =  maths>=70 and physics>=60 and chemistry>=60
+total_subject = maths+physics+chemistry >= 180
+
+print(total_marks or total_subject)
+
+
 #Greatest Among Three Numbers
 n1 = int(input())
 n2 = int(input())
